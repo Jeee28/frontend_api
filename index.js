@@ -1,22 +1,3 @@
-const submit = document.querySelector('#submit')
-
-
-submit.addEventListener('click', () =>{
-    let fname=document.querySelector('#fname')
-    let lname=document.querySelector('#lname')
-    let email=document.querySelector('#email')
-    let gender=document.querySelector('#gender')
-
-    let formData = {fname,lname,email,gender}
-
-    fetch('https://bscs3b-crud-api-yvd4.onrender.com/api/members',{
-        method:'POST',
-        body: JSON.stringify(formData),
-        headers:{
-            'Content-Type':'application/json',
-        }
-    })
-})
 
 
 
